@@ -42,5 +42,9 @@ class CurlController{
         $result->status = curl_getinfo($this->ch);
         return $result;
     }
+
+    public function close(){
+        curl_close($this->ch);
+    }
 }
 

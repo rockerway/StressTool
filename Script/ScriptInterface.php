@@ -1,9 +1,7 @@
 <?php
 
 interface ScriptInterface{
-    public function run();
+    public function setBaseUrl($baseUrl);
 
-    public function setDuring($during);
-
-    public function allowRandomEnd($allow);
+    public function close();
 }
